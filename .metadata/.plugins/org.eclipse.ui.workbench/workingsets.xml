@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495656816526_1" label="cse" name="cse"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495651263955_0" label="Window Working Set" name="Aggregate for window 1495651263955"/>
+<mruList name="cse"/>
 </workingSetManager>
