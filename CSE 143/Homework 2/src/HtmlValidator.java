@@ -20,9 +20,9 @@ public class HtmlValidator {
    }
    
    // pre: tags != null (throw IllegalArgumentException if not)
-   // post: initialize validator with an entirely separate copy of the queue that was 
-   //			passed in. after executing, the queue that was passed in the parameter
-   //			should not have change in anyway.
+   // post: initialize validator with an entirely separate copy of the queue that was
+   //		passed in. after executing, the queue that was passed in the parameter
+   //		should not have change in anyway.
    public HtmlValidator(Queue<HtmlTag> tags) {
       if (tags == null) {
          throw new IllegalArgumentException("Error, Queue is null");
@@ -40,8 +40,8 @@ public class HtmlValidator {
    }
    
    // post: returns an exact copy of the validator's queue of HTML tag in proper order.
-   //			it should also reflect any changes that was made into the Validator's queue
-   //			such as adding or removing tags
+   //		it should also reflect any changes that was made into the Validator's queue
+   //		such as adding or removing tags
    public Queue<HtmlTag> getTags() {
       Queue <HtmlTag> copyOfTag = new LinkedList<HtmlTag>(tag);
       return copyOfTag;
@@ -49,8 +49,8 @@ public class HtmlValidator {
    
    // pre: element != null (throw IllegalArgumentException if not)
    // post: remove from the validator's queue any tags that match the given string
-   //			that was passed in the parameter. if the string that was passed in does
-   //			not match any of the tags, then the queue should not be modified.
+   //		that was passed in the parameter. if the string that was passed in does
+   //		not match any of the tags, then the queue should not be modified.
    public void removeAll (String element) {
       if (element == null) {
          throw new IllegalArgumentException("element is null");
@@ -65,10 +65,10 @@ public class HtmlValidator {
       }
    }
    
-   // post: traverse through and print in an indented text representation of all the 
-   // 		HTML tags in the queue. if there's an error such as opening tags without 
-   //			a closing tag and is not self closing, an error message will appear describing
-   //			the type of error.
+   // post: traverse through and print in an indented text representation of all the
+   // 		HTML tags in the queue. if there's an error such as opening tags without
+   //		a closing tag and is not self closing, an error message will appear describing
+   //		the type of error.
    public void validate() {
       Stack<HtmlTag> s = new Stack<HtmlTag>();
       while (!tag.isEmpty()) {
@@ -105,9 +105,3 @@ public class HtmlValidator {
       }
    }
 }
-
-
-
-
-
-

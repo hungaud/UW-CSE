@@ -56,22 +56,22 @@ public class AssassinManager {
    }
    
    // post: return if true if the given name is found in the kill ring. it checks each
-   //			node if it contains the name. if it cant find it, then it returns false
+   //		node if it contains the name. if it cant find it, then it returns false
    public boolean killRingContains(String name) {
-   	AssassinNode check = frontKill;
-   	return checkContain(check, name);
+      AssassinNode check = frontKill;
+      return checkContain(check, name);
    }
    
    // post: returns true if the name is found in the graveyard. it checks checks each
-   //			node in the graveyard if it contians the name. if not, then return false
+   //		node in the graveyard if it contians the name. if not, then return false
    public boolean graveyardContains(String name) {
-   	AssassinNode check = frontGrave;
-   	return checkContain(check, name);
+      AssassinNode check = frontGrave;
+      return checkContain(check, name);
    }
    
    // post: private helper method that is used to check both the killRing and
-   //			grave yard if it contains the name that is passed in the parameter.
-   //			return true if the name is found false otherwise
+   //		grave yard if it contains the name that is passed in the parameter.
+   //		return true if the name is found false otherwise
    private boolean checkContain (AssassinNode check, String name) {
       while (check != null) {
          if (check.name.equalsIgnoreCase(name)) {

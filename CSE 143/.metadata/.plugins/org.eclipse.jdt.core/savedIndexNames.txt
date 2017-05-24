@@ -1,9 +1,7 @@
 INDEX VERSION 1.130+D:\Github\UW-CSE\CSE 143\.metadata\.plugins\org.eclipse.jdt.core
-2961386505.index
-540815768.index
 659682689.index
+1347863831.index
 3459403956.index
 3107282978.index
-1463484686.index
-1347863831.index
 3378484397.index
+1463484686.index

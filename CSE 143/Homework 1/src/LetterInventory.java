@@ -14,16 +14,16 @@ public class LetterInventory {
    private int size;
    
    // post: helper method for the constructor, sets the size and initialize
-   //			the array for letter inventory
+   //		the array for letter inventory
    private LetterInventory() {
       size = 0;
       inventory = new int[ALPHABET];
    }
    
    // post: constructs an inventory of alphabetic letters from a string that
-   //			is passed through the parameters. it iterate through the string and
-   //			increase the size and increase the count in the index of which represents
-   //			the letter
+   //		is passed through the parameters. it iterate through the string and
+   //		increase the size and increase the count in the index of which represents
+   //		the letter
    public LetterInventory(String data) {
       this();
       String lowerAlphabet = data.toLowerCase();
@@ -69,7 +69,7 @@ public class LetterInventory {
    }
    
    // post: return a string representation of the inventory with the letters
-   //			all lower case and in sorted order.
+   //		all lower case and in sorted order.
    public String toString() {
       String result = "[";
       for (int i = 0; i < ALPHABET; i++) {
@@ -81,8 +81,8 @@ public class LetterInventory {
    }
    
    // post: constructs and return a new LetterInventory object that represents the sum of
-   //			this LetterInventory and the other given LetterInventory. counts for each letter
-   //			should be added together.
+   //		this LetterInventory and the other given LetterInventory. counts for each letter
+   //		should be added together.
    public LetterInventory add(LetterInventory other) {
       LetterInventory result = new LetterInventory();
       for (int i = 0; i < ALPHABET; i++) {
@@ -92,8 +92,8 @@ public class LetterInventory {
    }
    
    // post: construct and return a new LetterInventory object that represents the result of
-   //			subtracting the other inventory from this inventory. if it's negative,
-   //			it returns null
+   //		subtracting the other inventory from this inventory. if it's negative,
+   //		it returns null
    public LetterInventory subtract(LetterInventory other) {
       LetterInventory result = new LetterInventory();
       for (int i = 0; i < ALPHABET; i++) {

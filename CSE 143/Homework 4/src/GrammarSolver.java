@@ -15,7 +15,7 @@ public class GrammarSolver {
    
    // pre: list.size() != null (if not throw IllegalArgumentException)
    // post: initialize a new grammar solver over the given BNF grammar rules where each
-   //			rule corresponds to one line of text.
+   //		rule corresponds to one line of text.
    public GrammarSolver(List<String> rules) {
       if (rules.isEmpty()) {
          throw new IllegalArgumentException("set is empty");
@@ -26,7 +26,7 @@ public class GrammarSolver {
    
    // post: a helper method to make the constructor short. it splits the strings up into parts
    //       and put them in the map. if the key is already inside the map, then it will
-   //			throw an illegal argument exception
+   //		throw an illegal argument exception
    private void createMap(List<String> grammar) {
       for (String s : grammar) {
          String[] line = s.split("::=");
@@ -40,7 +40,6 @@ public class GrammarSolver {
          }
       }
    }
-   
    
    // post: returns the grammar map if it contains the key of the map or not.
    public boolean contains(String symbol) {
