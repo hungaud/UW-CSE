@@ -14,10 +14,10 @@ public class MyGraph implements Graph {
    
    private HashMap<Vertex, LinkedList<Vertex>> vertexMap;           //keeps track of the vertex
    private List<Edge> e;                                            //keeps a list of all edges
-   private List<Vertex> v;                                          //keeps a list of all vertex                                 //keeps track of thefinal path
+   private List<Vertex> v;                                          //keeps a list of all vertex
    
    // post: Constructor that initialize a collection of vertecies with the adjacent vertices.
-   //		 and initialize a collectoin of all the vertecies and edges.
+   //		and initialize a collectoin of all the vertecies and edges.
    public MyGraph(Collection<Vertex> v, Collection<Edge> e) {
       this.vertexMap = new HashMap<Vertex, LinkedList<Vertex>>();
       this.e = new ArrayList<Edge>(e);
